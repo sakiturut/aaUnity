@@ -5,29 +5,16 @@ using UnityEngine;
 public class CircleControl : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject prefab;
-    public GameObject circle;
-    public Rigidbody2D circleRigidBody2D;
+    
     void Start()
     {
-        circleRigidBody2D = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Rotate(new Vector3(0, 0, 1), (float)0.5);
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            circle.transform.position += new Vector3(0, (float)0.01, 0);
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            
-        }
-        
 
     }
 
