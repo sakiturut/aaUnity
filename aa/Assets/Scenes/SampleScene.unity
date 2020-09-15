@@ -480,12 +480,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1774275038111749332}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &1891012884 stripped
+--- !u!50 &1891012884
 Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 1774275038921934272, guid: 3a989837f99a7c64eba190c76ec293c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1774275038111749332}
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891012880}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
 --- !u!1 &2143074494
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +618,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1774275038921934276, guid: 3a989837f99a7c64eba190c76ec293c2, type: 3}
   circle: {fileID: 1891012880}
-  circleRigidBody2D: {fileID: 1891012884}
 --- !u!50 &2143074499
 Rigidbody2D:
   serializedVersion: 4
@@ -651,6 +665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: circle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774275038921934277, guid: 3a989837f99a7c64eba190c76ec293c2,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1774275038921934278, guid: 3a989837f99a7c64eba190c76ec293c2,
         type: 3}
@@ -707,5 +726,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1774275038921934272, guid: 3a989837f99a7c64eba190c76ec293c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a989837f99a7c64eba190c76ec293c2, type: 3}
